@@ -115,8 +115,8 @@ weekTwoFridayLunchBreakField.addEventListener(
   "input",
   calculateWorkingHoursWeekTwo
 );
-let weeKOneStartHourFriday = document.getElementById("field153914802H");
-weeKOneStartHourFriday.addEventListener("change", calculateWorkingHoursWeekTwo);
+let weekTwoStartHourFriday = document.getElementById("field153914802H");
+weekTwoStartHourFriday.addEventListener("change", calculateWorkingHoursWeekTwo);
 let weekTwoStartMinuteFriday = document.getElementById("field153914802I");
 weekTwoStartMinuteFriday.addEventListener(
   "change",
@@ -221,7 +221,7 @@ function calculateWorkingHoursWeekTwo() {
   let fridayMinutes = 0;
   if (weekTwoFriday.checked) {
     fridayMinutes = totalHoursWorkedInADay(
-      weeKOneStartHourFriday,
+      weekTwoStartHourFriday,
       weekTwoStartMinuteFriday,
       weekTwoEndHourFriday,
       weekTwoEndMinuteFriday,
