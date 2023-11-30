@@ -167,7 +167,7 @@ weekOneEndHourSunday.addEventListener("change", calculateWorkingHoursWeekOne);
 let weekOneEndMinuteSunday = document.getElementById("field153914264I");
 weekOneEndMinuteSunday.addEventListener("change", calculateWorkingHoursWeekOne);
 
-function calculateWorkingHoursWeekOne(breakMinutes) {
+function calculateWorkingHoursWeekOne() {
   let mondayBreakMinutes = parseInt(weekOneMondayLunchBreakField.value);
   let tuesdayBreakMinutes = parseInt(weekOneTuesdayLunchBreakField.value);
   let wednesdayBreakMinutes = parseInt(weekOneWednesdayLunchBreakField.value);
