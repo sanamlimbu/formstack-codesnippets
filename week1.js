@@ -115,8 +115,8 @@ weekOneFridayLunchBreakField.addEventListener(
   "input",
   calculateWorkingHoursWeekOne
 );
-let weeKOneStartHourFriday = document.getElementById("field153914250H");
-weeKOneStartHourFriday.addEventListener("change", calculateWorkingHoursWeekOne);
+let weekOneStartHourFriday = document.getElementById("field153914250H");
+weekOneStartHourFriday.addEventListener("change", calculateWorkingHoursWeekOne);
 let weekOneStartMinuteFriday = document.getElementById("field153914250I");
 weekOneStartMinuteFriday.addEventListener(
   "change",
