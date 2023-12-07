@@ -1,17 +1,13 @@
-function totalHoursWorkedInADay(
-  startHour,
-  startMinute,
-  endHour,
-  endMinute,
-  breakMinutes
-) {
-  let startMinutes =
-    parseInt(startHour.options[startHour.selectedIndex].value) * 60 +
-    parseInt(startMinute.options[startMinute.selectedIndex].value);
+function totalHoursWorkedInADay(startTime, endTime, breakMinutes) {
+  let startTimeArr = startTime.value.split(":");
+  let endTimeArr = endTime.value.split(":");
 
-  let endMinutes =
-    parseInt(endHour.options[endHour.selectedIndex].value) * 60 +
-    parseInt(endMinute.options[endMinute.selectedIndex].value);
+  let startMinutes;
+  let endMinutes;
+  if (startTimeArr.length == 2 && endTimeArr.length == 2) {
+    startMinutes = parseInt(startTimeArr[0]) * 60 + parseInt(startTimeArr[1]);
+    endMinutes = parseInt(endTimeArr[0]) * 60 + parseInt(endTimeArr[1]);
+  }
 
   if (isNaN(startMinutes) || isNaN(endMinutes) || isNaN(breakMinutes)) {
     return 0;
@@ -26,6 +22,5 @@ function totalHoursWorkedInADay(
   if (totalMinutes < 0) {
     return 0;
   }
-
   return totalMinutes;
 }
