@@ -137,7 +137,7 @@ function calculateWorkingHoursWeekOne() {
     sundayMinutes;
 
   if (totalMinutes >= 0) {
-    let totalHours = parseFloat(totalMinutes / 60).toFixed(1);
+    let totalHours = parseFloat(totalMinutes / 60).toFixed(2);
     weekOneTotalHoursField.value = totalHours;
   }
 }
