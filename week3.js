@@ -21,192 +21,58 @@ weekThreeSunday.addEventListener("change", calculateWorkingHoursWeekThree);
 
 let weekThreeTotalHoursField = document.getElementById("field155563499");
 
-let weekThreeMondayLunchBreakField = document.getElementById("field153914876");
-weekThreeMondayLunchBreakField.addEventListener(
-  "input",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartHourMonday = document.getElementById("field153914874H");
-weekThreeStartHourMonday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartMinuteMonday = document.getElementById("field153914874I");
-weekThreeStartMinuteMonday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndHourMonday = document.getElementById("field153914875H");
-weekThreeEndHourMonday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndMinuteMonday = document.getElementById("field153914875I");
-weekThreeEndMinuteMonday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-
-let weekThreeTuesdayLunchBreakField = document.getElementById("field153914880");
-weekThreeTuesdayLunchBreakField.addEventListener(
-  "input",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartHourTuesday = document.getElementById("field153914878H");
-weekThreeStartHourTuesday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartMinuteTuesday = document.getElementById("field153914878I");
-weekThreeStartMinuteTuesday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndHourTuesday = document.getElementById("field153914879H");
-weekThreeEndHourTuesday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndMinuteTuesday = document.getElementById("field153914879I");
-weekThreeEndMinuteTuesday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-
-let weekThreeWednesdayLunchBreakField =
-  document.getElementById("field153914884");
-weekThreeWednesdayLunchBreakField.addEventListener(
-  "input",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartHourWednesday = document.getElementById("field153914882H");
-weekThreeStartHourWednesday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartMinuteWednesday = document.getElementById("field153914882I");
-weekThreeStartMinuteWednesday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndHourWednesday = document.getElementById("field153914883H");
-weekThreeEndHourWednesday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndMinuteWednesday = document.getElementById("field153914883I");
-weekThreeEndMinuteWednesday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-
-let weekThreeThursdayLunchBreakField =
-  document.getElementById("field153914888");
-weekThreeThursdayLunchBreakField.addEventListener(
-  "input",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartHourThursday = document.getElementById("field153914886H");
-weekThreeStartHourThursday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartMinuteThursday = document.getElementById("field153914886I");
-weekThreeStartMinuteThursday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndHourThursday = document.getElementById("field153914887H");
-weekThreeEndHourThursday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndMinuteThursday = document.getElementById("field153914887I");
-weekThreeEndMinuteThursday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-
-let weekThreeFridayLunchBreakField = document.getElementById("field153914892");
-weekThreeFridayLunchBreakField.addEventListener(
-  "input",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartHourFriday = document.getElementById("field153914890H");
-weekThreeStartHourFriday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartMinuteFriday = document.getElementById("field153914890I");
-weekThreeStartMinuteFriday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndHourFriday = document.getElementById("field153914891H");
-weekThreeEndHourFriday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndMinuteFriday = document.getElementById("field153914891I");
-weekThreeEndMinuteFriday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-
-let weekThreeSaturdayLunchBreakField =
-  document.getElementById("field153914896");
-weekThreeSaturdayLunchBreakField.addEventListener(
-  "input",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartHourSaturday = document.getElementById("field153914894H");
-weekThreeStartHourSaturday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartMinuteSaturday = document.getElementById("field153914894I");
-weekThreeStartMinuteSaturday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndHourSaturday = document.getElementById("field153914895H");
-weekThreeEndHourSaturday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndMinuteSaturday = document.getElementById("field153914895I");
-weekThreeEndMinuteSaturday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-
-let weekThreeSundayLunchBreakField = document.getElementById("field153914900");
-weekThreeSundayLunchBreakField.addEventListener(
-  "input",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartHourSunday = document.getElementById("field153914898H");
-weekThreeStartHourSunday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeStartMinuteSunday = document.getElementById("field153914898I");
-weekThreeStartMinuteSunday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndHourSunday = document.getElementById("field153914899H");
-weekThreeEndHourSunday.addEventListener(
-  "change",
-  calculateWorkingHoursWeekThree
-);
-let weekThreeEndMinuteSunday = document.getElementById("field153914899I");
-weekThreeEndMinuteSunday.addEventListener(
+let weekThreeCalculateField = document.getElementById("field156010506_1");
+weekThreeCalculateField.addEventListener(
   "change",
   calculateWorkingHoursWeekThree
 );
 
 function calculateWorkingHoursWeekThree() {
+  let weekThreeMondayLunchBreakField =
+    document.getElementById("field153914876");
+  let weekThreeStartTimeMonday = document.getElementById("field153914874-time");
+  let weekThreeEndTimeMonday = document.getElementById("field153914875-time");
+
+  let weekThreeTuesdayLunchBreakField =
+    document.getElementById("field153914880");
+  let weekThreeStartTimeTuesday = document.getElementById(
+    "field153914878-time"
+  );
+  let weekThreeEndTimeTuesday = document.getElementById("field153914879-time");
+
+  let weekThreeWednesdayLunchBreakField =
+    document.getElementById("field153914884");
+  let weekThreeStartTimeWednesday = document.getElementById(
+    "field153914882-time"
+  );
+  let weekThreeEndTimeWednesday = document.getElementById(
+    "field153914883-time"
+  );
+
+  let weekThreeThursdayLunchBreakField =
+    document.getElementById("field153914888");
+  let weekThreeStartTimeThursday = document.getElementById(
+    "field153914886-time"
+  );
+  let weekThreeEndTimeThursday = document.getElementById("field153914887-time");
+
+  let weekThreeFridayLunchBreakField =
+    document.getElementById("field153914892");
+  let weekThreeStartTimeFriday = document.getElementById("field153914890-time");
+  let weekThreeEndTimeFriday = document.getElementById("field153914891-time");
+
+  let weekThreeSaturdayLunchBreakField =
+    document.getElementById("field153914896");
+  let weekThreeStartTimeSaturday = document.getElementById(
+    "field153914894-time"
+  );
+  let weekThreeEndTimeSaturday = document.getElementById("field153914895-time");
+
+  let weekThreeSundayLunchBreakField =
+    document.getElementById("field153914900");
+  let weekThreeStartTimeSunday = document.getElementById("field153914898-time");
+  let weekThreeEndTimeSunday = document.getElementById("field153914899-time");
+
   let mondayBreakMinutes = parseInt(weekThreeMondayLunchBreakField.value);
   let tuesdayBreakMinutes = parseInt(weekThreeTuesdayLunchBreakField.value);
   let wednesdayBreakMinutes = parseInt(weekThreeWednesdayLunchBreakField.value);
@@ -218,10 +84,8 @@ function calculateWorkingHoursWeekThree() {
   let mondayMinutes = 0;
   if (weekThreeMonday.checked) {
     mondayMinutes = totalHoursWorkedInADay(
-      weekThreeStartHourMonday,
-      weekThreeStartMinuteMonday,
-      weekThreeEndHourMonday,
-      weekThreeEndMinuteMonday,
+      weekThreeStartTimeMonday,
+      weekThreeEndTimeMonday,
       mondayBreakMinutes
     );
   }
@@ -229,30 +93,24 @@ function calculateWorkingHoursWeekThree() {
   let tuesdayMinutes = 0;
   if (weekThreeTuesday.checked) {
     tuesdayMinutes = totalHoursWorkedInADay(
-      weekThreeStartHourTuesday,
-      weekThreeStartMinuteTuesday,
-      weekThreeEndHourTuesday,
-      weekThreeEndMinuteTuesday,
+      weekThreeStartTimeTuesday,
+      weekThreeEndTimeTuesday,
       tuesdayBreakMinutes
     );
   }
   let wednesdayMinutes = 0;
   if (weekThreeWednesday.checked) {
     wednesdayMinutes = totalHoursWorkedInADay(
-      weekThreeStartHourWednesday,
-      weekThreeStartMinuteWednesday,
-      weekThreeEndHourWednesday,
-      weekThreeEndMinuteWednesday,
+      weekThreeStartTimeWednesday,
+      weekThreeEndTimeWednesday,
       wednesdayBreakMinutes
     );
   }
   let thursdayMinutes = 0;
   if (weekThreeThursday.checked) {
     thursdayMinutes = totalHoursWorkedInADay(
-      weekThreeStartHourThursday,
-      weekThreeStartMinuteThursday,
-      weekThreeEndHourThursday,
-      weekThreeEndMinuteThursday,
+      weekThreeStartTimeThursday,
+      weekThreeEndTimeThursday,
       thursdayBreakMinutes
     );
   }
@@ -260,10 +118,8 @@ function calculateWorkingHoursWeekThree() {
   let fridayMinutes = 0;
   if (weekThreeFriday.checked) {
     fridayMinutes = totalHoursWorkedInADay(
-      weekThreeStartHourFriday,
-      weekThreeStartMinuteFriday,
-      weekThreeEndHourFriday,
-      weekThreeEndMinuteFriday,
+      weekThreeStartTimeFriday,
+      weekThreeEndTimeFriday,
       fridayBreakMinutes
     );
   }
@@ -271,10 +127,8 @@ function calculateWorkingHoursWeekThree() {
   let saturdayMinutes = 0;
   if (weekThreeSaturday.checked) {
     saturdayMinutes = totalHoursWorkedInADay(
-      weekThreeStartHourSaturday,
-      weekThreeStartMinuteSaturday,
-      weekThreeEndHourSaturday,
-      weekThreeEndMinuteSaturday,
+      weekThreeStartTimeSaturday,
+      weekThreeEndTimeSaturday,
       saturdayBreakMinutes
     );
   }
@@ -282,10 +136,8 @@ function calculateWorkingHoursWeekThree() {
   let sundayMinutes = 0;
   if (weekThreeSunday.checked) {
     sundayMinutes = totalHoursWorkedInADay(
-      weekThreeStartHourSunday,
-      weekThreeStartMinuteSunday,
-      weekThreeEndHourSunday,
-      weekThreeEndMinuteSunday,
+      weekThreeStartTimeSunday,
+      weekThreeEndTimeSunday,
       sundayBreakMinutes
     );
   }
@@ -300,7 +152,7 @@ function calculateWorkingHoursWeekThree() {
     sundayMinutes;
 
   if (totalMinutes >= 0) {
-    let totalHours = parseFloat(totalMinutes / 60).toFixed(1);
+    let totalHours = parseFloat(totalMinutes / 60).toFixed(2);
     weekThreeTotalHoursField.value = totalHours;
   }
 }
